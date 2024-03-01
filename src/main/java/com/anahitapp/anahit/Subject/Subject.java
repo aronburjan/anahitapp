@@ -22,4 +22,17 @@ public class Subject {
     @Getter @Setter private Double userProgress;
 
     @Getter @Setter private Integer image;
+
+    public Subject(String name, String category, Integer importance)
+    {
+        this.name = name;
+        this.category = category;
+        this.importance = importance;
+    }
+
+    public Subject(String name, String category)
+    {
+        this.name = name;
+        this.category = category;
+    }
 }
